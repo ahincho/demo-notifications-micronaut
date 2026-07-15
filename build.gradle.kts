@@ -11,6 +11,7 @@ repositories {
 dependencies {
     annotationProcessor("io.micronaut:micronaut-http-validation")
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
+    testAnnotationProcessor("io.micronaut:micronaut-inject-java")
     implementation("io.micronaut.serde:micronaut-serde-jackson")
     implementation("io.micronaut:micronaut-http-server-netty")
     implementation("io.micronaut.validation:micronaut-validation")
@@ -20,7 +21,9 @@ dependencies {
     implementation("pe.edu.nova.java.starters:nova-notifications-micronaut-module:1.0.0")
 
     runtimeOnly("ch.qos.logback:logback-classic")
+    runtimeOnly("org.yaml:snakeyaml")
     testImplementation("io.micronaut.test:micronaut-test-junit5")
+    testImplementation("io.micronaut:micronaut-http-client")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
