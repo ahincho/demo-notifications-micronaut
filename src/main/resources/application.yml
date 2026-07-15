@@ -1,4 +1,4 @@
-galaxy-training.notifications:
+nova.notifications:
   enabled: true
   email:
     provider: sendgrid
