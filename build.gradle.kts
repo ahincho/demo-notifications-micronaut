@@ -84,3 +84,8 @@ tasks.named<JavaCompile>("compileJava") {
 }
 
 graalvmNative.toolchainDetection = false
+
+checkstyle {
+    toolVersion = "10.20.1"
+    configFile = file("config/checkstyle/checkstyle.xml")
+}
