@@ -3,7 +3,6 @@ package pe.edu.nova.demo.notifications.micronaut;
 import io.micronaut.context.annotation.Factory;
 import io.micronaut.context.annotation.Replaces;
 import jakarta.inject.Singleton;
-import pe.edu.nova.java.libs.notifications.application.facade.NotificationFacade;
 import pe.edu.nova.java.libs.notifications.domain.vo.EmailAddress;
 import pe.edu.nova.java.libs.notifications.infrastructure.configuration.EmailConfiguration;
 import pe.edu.nova.java.libs.notifications.infrastructure.configuration.EmailProvider;
